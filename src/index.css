@@ -8,7 +8,6 @@ body{
         justify-content: right;
         z-index: 100;
         background-color: black;
-
         transition: 1s;
     }
     .navbar:hover{
@@ -36,26 +35,34 @@ body{
         transition:0.5s;
         transform:scale(130%);
     }
+/* Footer */
+    .footerHome{
+        background-color: black;
+        width: 100%;
+        height: 5vw;
+        margin-top: 4vw;
+    }
+    .footerNotHome{
+        background-color: black;
+        position: absolute;
+        bottom:0;
+        width: 100%;
+        height: 5vw;
+    }
 
 /* Home Page */
-    .HomePageWrapper{
-        display:grid;
-        margin-top: 3vw;
-        grid-template-areas: 'Video'
-                             'About'
-                             'Links'
-                             'NavLinks' 
-        ;
-        justify-content:space-evenly;
-    }
+.HomePageWrapper{
+    display:grid;
+    margin-top: 3vw;
+    grid-template-columns: auto;
+    justify-content:space-evenly;
+}
     /* Youtube Video Section */
     .YoutubeVideo{
-        grid-area:Video;
         margin:auto;
     }
     /* Introduction Section*/
     .Introduction{
-        grid-area:About;
         margin-top: 3vw;
         margin-left: 3vw;
         margin-right: 3vw;
@@ -70,7 +77,6 @@ body{
     }
     /* Links Section */
     .Links{
-        grid-area:Links;
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-evenly;
@@ -109,14 +115,38 @@ body{
     }
     /* NavLinks Section */
     .NavLinks{
-        grid-area:NavLinks;
+        position:relative;
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-evenly;
-        margin-top: 3vw;
+        margin-top: 5vw;
+        margin-bottom: 4vw;
     }
     .NavLink{
-        height:20vw;
-        width: 20vw;
-        border: solid;
+        height:15vw;
+        width: 15vw;
+        text-decoration: none;
+        text-align: center;
     }
+    .NavLinkIcon{
+        color:black;
+        width: 15vw;
+        height: 15vw;
+        transition:0.5s;
+    }
+    .NavLinkIcon:hover{
+        opacity:0.7;
+        transition:0.5s;
+    }
+
+/* Nav Pages */
+.NavPageWrapper{
+    display:grid;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+    margin-top: 5vw;
+}
+.goBackHome{
+    text-align: center;
+    margin-bottom: 1vw;
+}

@@ -2,10 +2,12 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
+import Footer from '../components/Footer'
+import { BsArchiveFill, BsBook, BsFillCalendar2RangeFill, BsFillCameraVideoFill, BsFillCheckSquareFill } from "react-icons/bs";
 
 export default function HomePage() {
   return (
-    <motion.div className='HomePageWrapper'>
+    <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:2}}} exit={{opacity:0}} className='HomePageWrapper'>
       <div className="YoutubeVideo">
         <ReactPlayer className="YoutubeVideo" width={"70vw"} height={"40vw"} url='https://www.youtube.com/watch?v=jeuVYgo7TU8' controls="true" />
       </div>
@@ -15,41 +17,42 @@ export default function HomePage() {
         </span>
       </div>
       <div className="Links">
-        <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
-          <span className='linksButtonIcon'>A</span>
-          <span className='linksButtonText'>BRUh</span>
-        </a>
-        <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
-          <span className='linksButtonIcon'>A</span>
-          <span className='linksButtonText'>BRUh</span>
-        </a>
-        <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
-          <span className='linksButtonIcon'>A</span>
-          <span className='linksButtonText'>BRUh</span>
-        </a>
-        <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
-          <span className='linksButtonIcon'>A</span>
-          <span className='linksButtonText'>BRUh</span>
-        </a>
-        <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
-          <span className='linksButtonIcon'>A</span>
-          <span className='linksButtonText'>BRUh</span>
-        </a>
-        <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
-          <span className='linksButtonIcon'>A</span>
-          <span className='linksButtonText'>BRUh</span>
-        </a>
+      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+        <BsFillCameraVideoFill className='linksButtonIcon'/>
+        <span className='linksButtonText'>Link Ejemplo</span>
+      </a>
+      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+        <BsFillCalendar2RangeFill className='linksButtonIcon'/>
+        <span className='linksButtonText'>Link Ejemplo</span>
+      </a>
+      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+        <BsFillCheckSquareFill className='linksButtonIcon'/>
+        <span className='linksButtonText'>Link Ejemplo</span>
+      </a>
+      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+        <BsFillCalendar2RangeFill className='linksButtonIcon'/>
+        <span className='linksButtonText'>Link Ejemplo</span>
+      </a>
+      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+        <BsFillCameraVideoFill className='linksButtonIcon'/>
+        <span className='linksButtonText'>Link Ejemplo</span>
+      </a>
+      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+        <BsFillCheckSquareFill className='linksButtonIcon'/>
+        <span className='linksButtonText'>Link Ejemplo</span>
+      </a>
       </div>
       <div className="NavLinks">
-        <NavLink className='NavLink' to='/'>
-          <span className='NavLinkIcon'></span>
-          <span className='NavLinkTitle'>Material Educativo</span> 
+        <NavLink className='NavLink' to='/MaterialEducativo'>
+          <BsArchiveFill className='NavLinkIcon'/>
+          <span>Material Educativo</span> 
         </NavLink>
-        <NavLink className='NavLink' to='/'>
-          <span className='NavLinkIcon'></span>
-          <span className='NavLinkTitle'>Notas</span> 
+        <NavLink className='NavLink' to='/Notas'>
+          <BsBook className='NavLinkIcon'/>
+          <span>Notas</span> 
         </NavLink>
       </div>
+      <Footer style="footerHome"/>
     </motion.div>
   )
 }
