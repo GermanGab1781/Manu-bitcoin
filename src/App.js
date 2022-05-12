@@ -4,7 +4,6 @@ import './index.css'
 import Nav from "./components/Nav";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
-
 function App(){
 return(
     <BrowserRouter>

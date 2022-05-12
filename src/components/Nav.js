@@ -9,12 +9,12 @@ export default function Nav() {
                 exit={{opacity:0}}   
                 className='navbar'>
         <NavLink className="navButton brand" to="/" >BITCOIN</NavLink>
-        <a className="navButton" href='https://www.instagram.com/' target="_blank" >Youtube </a>
-        <a className="navButton" href='https://www.instagram.com/' target="_blank" >Instagram </a>
-        <a className="navButton" href='https://www.instagram.com/' target="_blank" >Linkedin</a>    
-        <a className="navButton" href='https://www.instagram.com/' target="_blank" >Telegram</a>
-        <a className="navButton" href='https://www.instagram.com/' target="_blank" >Twitch</a>
-        <a className="navButton" href='https://www.instagram.com/' target="_blank" >Twitter</a>   
+        <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Youtube </a>
+        <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Instagram </a>
+        <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Linkedin</a>    
+        <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Telegram</a>
+        <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Twitch</a>
+        <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Twitter</a>   
     </motion.div>
   )
 }

@@ -1,5 +1,7 @@
 body{
-    background-color:grey;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 /* NavBar */
     .navbar{
@@ -30,8 +32,8 @@ body{
         left:0;
     }
     .navButton:hover{
-        color:whitesmoke;
-        border-color:whitesmoke;
+        color:#fff;
+        border-color:#fff;
         transition:0.5s;
         transform:scale(130%);
     }
@@ -39,15 +41,46 @@ body{
     .footerHome{
         background-color: black;
         width: 100%;
-        height: 5vw;
         margin-top: 4vw;
+        height: fit-content;
+        text-align: center;
     }
     .footerNotHome{
         background-color: black;
         position: absolute;
         bottom:0;
         width: 100%;
-        height: 5vw;
+        height: fit-content;
+        text-align: center;
+    }
+    .footerGrid{
+        color:white;
+        display:grid;
+        grid-template-columns: 5vw 5vw 5vw 5vw 5vw 5vw  ;
+        justify-content: center;
+        padding:1vw;
+    }
+    .footerTitle{
+        color:#fff;
+        font-size: 3vw;
+        text-decoration: none;
+        transition:0.5s;
+    }
+    .footerTitle:hover{
+        transition:0.4s;
+        color:rgb(221, 136, 24);
+        font-size:3.2vw;      
+    }
+    .footerIcon{
+        height: 2vw;
+        width: 2vw;
+        color:#fff;
+        transition:1s;
+    }
+    .footerIcon:hover{
+        transition:0.4s;
+        transform:scale(120%);
+        color:rgb(221, 136, 24);
     }
 
 /* Home Page */
@@ -69,10 +102,11 @@ body{
     }
     .introTitle{
         font-size: 4vw;
-        color:black;
+        color:rgb(221, 136, 24);
         display: inline-block;
     }
     .introText{
+        color:#fff;
         font-size: 1.5vw;
     }
     /* Links Section */
@@ -90,12 +124,15 @@ body{
         width:40vw;
         height: 3vw;
         margin-bottom: 1vw;
-        background-color: aqua;
+        background-color: rgb(221, 136, 24);
         text-decoration: none;
+        transition:0.5s;
     }
     .linksButton:hover{
-        transition:0.2s;
+        transition:0.4s;
+        transform:scale(110%);
         border:solid;
+        border-color:#000;
     }
     .linksButtonIcon{
         position:absolute;
@@ -134,8 +171,13 @@ body{
         height: 15vw;
         transition:0.5s;
     }
+    .NavLinkTitle{
+        font-size: 1.5vw;
+        color:#fff;
+    }
     .NavLinkIcon:hover{
         opacity:0.7;
+        transform:scale(110%);
         transition:0.5s;
     }
 
@@ -147,6 +189,14 @@ body{
     margin-top: 5vw;
 }
 .goBackHome{
+    text-decoration: none;
     text-align: center;
     margin-bottom: 1vw;
+    color:#fff;
+    transition:0.5s;
+}
+.goBackHome:hover{
+    transition: 1s;
+    transform: scale(110%);
+    color:#000;
 }

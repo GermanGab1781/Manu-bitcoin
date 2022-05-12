@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import { BsArchiveFill, BsBook, BsFillCalendar2RangeFill, BsFillCameraVideoFill, BsFillCheckSquareFill } from "react-icons/bs";
 
 export default function HomePage() {
+  const stringStyle = "footerHome";
   return (
     <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:2}}} exit={{opacity:0}} className='HomePageWrapper'>
       <div className="YoutubeVideo">
@@ -17,27 +18,27 @@ export default function HomePage() {
         </span>
       </div>
       <div className="Links">
-      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+      <a href='https://www.instagram.com/' rel="noreferrer" target="_blank" className='linksButton'>
         <BsFillCameraVideoFill className='linksButtonIcon'/>
         <span className='linksButtonText'>Link Ejemplo</span>
       </a>
-      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+      <a href='https://www.instagram.com/' rel="noreferrer" target="_blank" className='linksButton'>
         <BsFillCalendar2RangeFill className='linksButtonIcon'/>
         <span className='linksButtonText'>Link Ejemplo</span>
       </a>
-      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+      <a href='https://www.instagram.com/' rel="noreferrer" target="_blank" className='linksButton'>
         <BsFillCheckSquareFill className='linksButtonIcon'/>
         <span className='linksButtonText'>Link Ejemplo</span>
       </a>
-      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+      <a href='https://www.instagram.com/' rel="noreferrer" target="_blank" className='linksButton'>
         <BsFillCalendar2RangeFill className='linksButtonIcon'/>
         <span className='linksButtonText'>Link Ejemplo</span>
       </a>
-      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+      <a href='https://www.instagram.com/' rel="noreferrer" target="_blank" className='linksButton'>
         <BsFillCameraVideoFill className='linksButtonIcon'/>
         <span className='linksButtonText'>Link Ejemplo</span>
       </a>
-      <a href='https://www.instagram.com/' target="_blank" className='linksButton'>
+      <a href='https://www.instagram.com/' rel="noreferrer" target="_blank" className='linksButton'>
         <BsFillCheckSquareFill className='linksButtonIcon'/>
         <span className='linksButtonText'>Link Ejemplo</span>
       </a>
@@ -45,14 +46,14 @@ export default function HomePage() {
       <div className="NavLinks">
         <NavLink className='NavLink' to='/MaterialEducativo'>
           <BsArchiveFill className='NavLinkIcon'/>
-          <span>Material Educativo</span> 
+          <span className="NavLinkTitle">Material Educativo</span> 
         </NavLink>
         <NavLink className='NavLink' to='/Notas'>
           <BsBook className='NavLinkIcon'/>
-          <span>Notas</span> 
+          <span className="NavLinkTitle">Notas</span> 
         </NavLink>
       </div>
-      <Footer style="footerHome"/>
+      <Footer styleType={stringStyle}/>
     </motion.div>
   )
 }
