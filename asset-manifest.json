@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Manu-bitcoin/static/css/main.caa27d1a.css",
-    "main.js": "/Manu-bitcoin/static/js/main.00f72a1e.js",
+    "main.css": "/Manu-bitcoin/static/css/main.7083ea75.css",
+    "main.js": "/Manu-bitcoin/static/js/main.3c373a86.js",
     "static/media/background.jpg": "/Manu-bitcoin/static/media/background.1605a3cb9f5f55cace0a.jpg",
     "index.html": "/Manu-bitcoin/index.html",
-    "main.caa27d1a.css.map": "/Manu-bitcoin/static/css/main.caa27d1a.css.map",
-    "main.00f72a1e.js.map": "/Manu-bitcoin/static/js/main.00f72a1e.js.map"
+    "main.7083ea75.css.map": "/Manu-bitcoin/static/css/main.7083ea75.css.map",
+    "main.3c373a86.js.map": "/Manu-bitcoin/static/js/main.3c373a86.js.map"
   },
   "entrypoints": [
-    "static/css/main.caa27d1a.css",
-    "static/js/main.00f72a1e.js"
+    "static/css/main.7083ea75.css",
+    "static/js/main.3c373a86.js"
   ]
 }
