@@ -68,8 +68,7 @@ body{
     }
     .footerTitle:hover{
         transition:0.4s;
-        color:rgb(221, 136, 24);
-        font-size:3.2vw;      
+        color:rgb(221, 136, 24);  
     }
     .footerIcon{
         height: 2vw;
