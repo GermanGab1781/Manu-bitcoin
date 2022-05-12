@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    background-color:grey;
 }
+/* NavBar */
+    .navbar{
+        position:sticky;
+        top:0;
+        justify-content: right;
+        z-index: 100;
+        background-color: black;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+        transition: 1s;
+    }
+    .navbar:hover{
+
+        transition: 1s;
+    }
+    .navButton{
+        cursor:pointer;
+        font-size:1.2vw;
+        color:darkgrey;
+        padding:0.2vw;
+        transition:0.5s;
+        margin-right: 1vw;
+        text-decoration: none;
+    }
+    .navButton.brand{
+        position:absolute;
+        color:red;
+        margin-left:2vw;
+        left:0;
+    }
+    .navButton:hover{
+        color:whitesmoke;
+        border-color:whitesmoke;
+        transition:0.5s;
+        transform:scale(130%);
+    }
+
+/* Home Page */
+    .HomePageWrapper{
+        display:grid;
+        margin-top: 3vw;
+        grid-template-areas: 'Video'
+                             'About'
+                             'Links'
+                             'NavLinks' 
+        ;
+        justify-content:space-evenly;
+    }
+    /* Youtube Video Section */
+    .YoutubeVideo{
+        grid-area:Video;
+        margin:auto;
+    }
+    /* Introduction Section*/
+    .Introduction{
+        grid-area:About;
+        margin-top: 3vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .introTitle{
+        font-size: 4vw;
+        color:black;
+        display: inline-block;
+    }
+    .introText{
+        font-size: 1.5vw;
+    }
+    /* Links Section */
+    .Links{
+        grid-area:Links;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        margin-top: 4vw;
+    }
+    .linksButton{
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 07px 07px 07px 07px;
+        width:40vw;
+        height: 3vw;
+        margin-bottom: 1vw;
+        background-color: aqua;
+        text-decoration: none;
+    }
+    .linksButton:hover{
+        transition:0.2s;
+        border:solid;
+    }
+    .linksButtonIcon{
+        position:absolute;
+        color:white;
+        font-size: 1vw;
+        left:5%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+    .linksButtonText{
+        position:absolute;
+        color:white;
+        font-size: 1vw;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    /* NavLinks Section */
+    .NavLinks{
+        grid-area:NavLinks;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        margin-top: 3vw;
+    }
+    .NavLink{
+        height:20vw;
+        width: 20vw;
+        border: solid;
+    }
