@@ -8,7 +8,7 @@ export default function MaterialEducativo() {
   const stringStyle="footerNotHome";
   return (
     <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:2}}} exit={{opacity:0}} className='NavPageWrapper'>
-      <NavLink className="goBackHome" to="/"> Volver</NavLink>
+      <NavLink className="goBackHome" to="/Manu-bitcoin/"> Volver</NavLink>
       <a href='https://www.instagram.com/' rel="noreferrer" target="_blank" className='linksButton'>
         <BsFillCameraVideoFill className='linksButtonIcon'/>
         <span className='linksButtonText'>Link Ejemplo</span>

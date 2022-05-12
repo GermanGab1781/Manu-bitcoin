@@ -8,7 +8,7 @@ export default function Nav() {
                 animate={{opacity:1,transition:{duration:1}}}
                 exit={{opacity:0}}   
                 className='navbar'>
-        <NavLink className="navButton brand" to="/" >BITCOIN</NavLink>
+        <NavLink className="navButton brand" to="/Manu-bitcoin/" >BITCOIN</NavLink>
         <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Youtube </a>
         <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Instagram </a>
         <a className="navButton" href='https://www.instagram.com/' rel="noreferrer" target="_blank" >Linkedin</a>    

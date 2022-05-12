@@ -8,7 +8,7 @@ import { BsArchiveFill, BsBook, BsFillCalendar2RangeFill, BsFillCameraVideoFill,
 export default function HomePage() {
   const stringStyle = "footerHome";
   return (
-    <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:2}}} exit={{opacity:0}} className='HomePageWrapper'>
+    <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:4}}} exit={{opacity:0}} className='HomePageWrapper'>
       <div className="YoutubeVideo">
         <ReactPlayer className="YoutubeVideo" width={"70vw"} height={"40vw"} url='https://www.youtube.com/watch?v=jeuVYgo7TU8' controls="true" />
       </div>
@@ -44,11 +44,11 @@ export default function HomePage() {
       </a>
       </div>
       <div className="NavLinks">
-        <NavLink className='NavLink' to='/MaterialEducativo'>
+        <NavLink className='NavLink' to='/Manu-bitcoin/MaterialEducativo'>
           <BsArchiveFill className='NavLinkIcon'/>
           <span className="NavLinkTitle">Material Educativo</span> 
         </NavLink>
-        <NavLink className='NavLink' to='/Notas'>
+        <NavLink className='NavLink' to='/Manu-bitcoin/Notas'>
           <BsBook className='NavLinkIcon'/>
           <span className="NavLinkTitle">Notas</span> 
         </NavLink>
